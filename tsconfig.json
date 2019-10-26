@@ -11,13 +11,24 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "types": [
+        "jquery"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-chessboard": [
+        "dist/ngx-chessboard"
+      ],
+      "ngx-chessboard/*": [
+        "dist/ngx-chessboard/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
